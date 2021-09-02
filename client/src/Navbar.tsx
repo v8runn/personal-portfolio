@@ -1,7 +1,6 @@
 import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
-import Box from "@material-ui/core/Box";
 import Button from "@material-ui/core/Button";
 import Grid from "@material-ui/core/Grid";
 import { Typography } from "@material-ui/core";
@@ -11,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
         flexGrow: 1
     },
     nav: {
-        background: "#0b0c10",
+        background: "#1f2833",
         padding: "10px"
     },
     title: {
@@ -61,7 +60,7 @@ export default function Navbar ()
                                         Projects
                                     </Button>
                                     <Button color="inherit" className={classes.btn}>
-                                        Contact Me
+                                        resume
                                     </Button>
                                 </div>
                             </Grid>
