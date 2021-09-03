@@ -1,6 +1,7 @@
 import './styles.css'; 
 import Navbar from './Navbar'
 import About from './About'
+import Skills from './Skills'
 import { CssBaseline, createTheme, responsiveFontSizes } from '@material-ui/core';
 
 let theme = createTheme({
@@ -22,6 +23,7 @@ function App() {
       <CssBaseline>
       <Navbar />
       <About />
+      <Skills />
       </CssBaseline>
     </div>
   );

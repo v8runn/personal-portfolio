@@ -7,7 +7,7 @@ import { Typography } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        flexGrow: 1
+        flexGrow: 1,
     },
     nav: {
         background: "#1f2833",
@@ -53,8 +53,11 @@ export default function Navbar ()
                             </Grid>
                             <Grid item>
                                 <div>
-                                    <Button color="inherit" className={classes.btn}>
+                                    <Button color="inherit" className={classes.btn} href="#about">
                                         About Me
+                                    </Button>
+                                    <Button color="inherit" className={classes.btn} href="#skills">
+                                        Skills
                                     </Button>
                                     <Button color="inherit" className={classes.btn}>
                                         Projects
