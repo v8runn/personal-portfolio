@@ -1,1 +1,1 @@
-# personal-portfolio
+The repository which contains the code for my personal portfolio website, created using TypeScript with React and Material-UI.

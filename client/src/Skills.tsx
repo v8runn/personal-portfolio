@@ -88,6 +88,9 @@ export default function Skills ()
                                     HTML
                                 </Button>
                                 <Button size="small" variant="contained" className={classes.btn}>
+                                    mysql
+                                </Button>
+                                <Button size="small" variant="contained" className={classes.btn}>
                                     CSS
                                 </Button>
                                 <Button size="small" variant="contained" className={classes.btn}>
@@ -109,9 +112,6 @@ export default function Skills ()
                                     reactJS
                                 </Button>
                                 <Button size="small" variant="contained" className={classes.btn}>
-                                    nodeJS
-                                </Button>
-                                <Button size="small" variant="contained" className={classes.btn}>
                                     material-ui
                                 </Button>
                                 <Button size="small" variant="contained" className={classes.btn}>
@@ -131,7 +131,7 @@ export default function Skills ()
                         <Card className={classes.card}>
                             <CardContent>
                                 <Typography gutterBottom variant="h6" align="center" className={classes.names}>
-                                    other tools
+                                    some other tools
                                 </Typography>
                             </CardContent>
                             <CardActions className={classes.content}>

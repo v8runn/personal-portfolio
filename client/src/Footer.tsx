@@ -14,8 +14,10 @@ const useStyles = makeStyles((theme) => ({
     padding: "3px",
     cursor: "pointer",
     color: "white",
+    fontSize: "30px",
     '&:hover': {
-        color: "#66fcf1"
+        color: "#66fcf1",
+        fontSize: "25px"
     }
     
   },
@@ -28,7 +30,7 @@ export default function Footer() {
     <AppBar position="static" className={classes.footer}>
       <Grid justifyContent="space-between" container spacing={10}>
         <Grid item>
-          <Typography variant="body2" style={{ marginLeft: "10px" }}>
+          <Typography variant="body2" style={{ marginLeft: "10px", fontSize: "20px", fontWeight: "bold" }}>
             {"Copyright © "} Varun Shankar 2021
           </Typography>
         </Grid>

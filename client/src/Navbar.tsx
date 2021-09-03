@@ -4,6 +4,8 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Button from "@material-ui/core/Button";
 import Grid from "@material-ui/core/Grid";
 import { Typography } from "@material-ui/core";
+import './resume.pdf';
+
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -16,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
     title: {
         flexGrow: 1,
         marginLeft: "10px",
-        fontSize: "25px",
+        fontSize: "30px",
         letterSpacing:"0em",
         fontWeight: "bold",
         color: '#66fcf1'
@@ -27,9 +29,10 @@ const useStyles = makeStyles((theme) => ({
     btn: {
         textTransform: "lowercase",
         fontFamily: "'Montserrat', sans-serif",
-        fontSize: "18px",
+        fontSize: "20px",
         '&:hover': {
-            color: '#66fcf1'
+            color: '#66fcf1',
+            fontSize: "17px"
         }
     },
     toolbar: theme.mixins.toolbar,
@@ -62,9 +65,10 @@ export default function Navbar ()
                                     <Button color="inherit" className={classes.btn} href="#projects">
                                         Projects
                                     </Button>
-                                    <Button color="inherit" className={classes.btn}>
-                                        resume
+                                    <Button color="inherit" className={classes.btn}>resume
+                                        <a href="./resume.pdf"></a>
                                     </Button>
+                                    
                                 </div>
                             </Grid>
                     </Grid>
