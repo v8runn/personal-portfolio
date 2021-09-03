@@ -29,7 +29,7 @@ const ProjectsData: projects[] = [
     {
         name: "supermarket billing system",
         image: supermarket,
-        description: "A supermarket billing system created on C++ using the OOP methods.",
+        description: "A supermarket billing system created on Turbo C++ using the OOP methods.",
         link: "https://github.com/v8runn/SupermarketBillingSystem"
     },
     {

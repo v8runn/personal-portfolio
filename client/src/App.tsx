@@ -3,6 +3,7 @@ import Navbar from './Navbar'
 import About from './About'
 import Skills from './Skills'
 import Projects from './Projects'
+import Footer from './Footer'
 import { CssBaseline, createTheme, responsiveFontSizes } from '@material-ui/core';
 
 let theme = createTheme({
@@ -26,6 +27,7 @@ function App() {
       <About />
       <Skills />
       <Projects />
+      <Footer />
       </CssBaseline>
     </div>
   );
