@@ -6,7 +6,7 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 const useStyles = makeStyles((theme) => ({
   footer: {
     padding: theme.spacing(3, 2),
-    marginTop: "auto",
+    marginTop: "16px",
     background: "#1f2833",
     color: "#66fcf1",
   },
@@ -30,7 +30,7 @@ export default function Footer() {
     <AppBar position="static" className={classes.footer}>
       <Grid justifyContent="space-between" container spacing={10}>
         <Grid item>
-          <Typography variant="body2" style={{ marginLeft: "10px", fontSize: "20px", fontWeight: "bold" }}>
+          <Typography variant="body2" style={{ marginLeft: "10px", fontSize: "18px" }}>
             {"Copyright © "} Varun Shankar 2021
           </Typography>
         </Grid>
