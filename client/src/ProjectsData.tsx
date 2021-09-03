@@ -35,7 +35,7 @@ const ProjectsData: projects[] = [
     {
         name: "chess",
         image: chess,
-        description: "THe game of chess created on Java.",
+        description: "The game of chess created on Java.",
         link: "https://github.com/v8runn/java-chess-game"
     }
 

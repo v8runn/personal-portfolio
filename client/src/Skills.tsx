@@ -14,7 +14,6 @@ const useStyles = makeStyles(() => ({
 
     root: {
         background: "#1f2833",
-        marginBottom: "100px"
     },
     title: {
         color: "#66fcf1",

@@ -59,7 +59,7 @@ export default function Navbar ()
                                     <Button color="inherit" className={classes.btn} href="#skills">
                                         Skills
                                     </Button>
-                                    <Button color="inherit" className={classes.btn}>
+                                    <Button color="inherit" className={classes.btn} href="#projects">
                                         Projects
                                     </Button>
                                     <Button color="inherit" className={classes.btn}>
