@@ -24,7 +24,7 @@ const ProjectsData: projects[] = [
         name: "the snake game",
         image: snakegame,
         description: "A fun classic recreated using the Python Tkinter module.",
-        link: "https://google.com"
+        link: "https://github.com/v8runn/snake-game"
     },
     {
         name: "supermarket billing system",
