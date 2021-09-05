@@ -4,7 +4,7 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Button from "@material-ui/core/Button";
 import Grid from "@material-ui/core/Grid";
 import { Typography } from "@material-ui/core";
-import './resume.pdf';
+
 
 
 const useStyles = makeStyles((theme) => ({
@@ -66,7 +66,7 @@ export default function Navbar ()
                                     <Button color="inherit" className={classes.btn} href="#projects">
                                         Projects
                                     </Button>
-                                    <Button color="inherit" className={classes.btn}>resume
+                                    <Button color="inherit" className={classes.btn} href="https://www.dropbox.com/s/puit0e5b7hd0wjl/Varun%20Resume%20September%202021%20%281%29.pdf?dl=0">resume
                                     </Button>
                                     
                                 </div>
