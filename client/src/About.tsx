@@ -10,7 +10,8 @@ const useStyles = makeStyles(() => ({
     title: {
         color: "#66fcf1",
         fontWeight: "bold",
-        fontSize: "40px"
+        fontSize: "40px",
+        fontFamily: "'Montserrat', sans-serif",
     },
     media: {
         width: "30%",
@@ -21,7 +22,8 @@ const useStyles = makeStyles(() => ({
     },
     info: {
         marginRight: "10px",
-        padding: "15px"
+        padding: "15px",
+        fontFamily: "'Montserrat', sans-serif",
     },
     box: {
         padding: "10px",
@@ -54,13 +56,13 @@ export default function About ()
                 hello, world!
             </Typography>
             <Box display="flex" flexDirection="row" alignItems="center" className={classes.box}>
-                <div className={classes.info}>
-                <Typography variant="h6">
+                <div>
+                <Typography variant="h6" className={classes.info}>
                     I am Varun, a second-year CS undergraduate at the University of Manchester and an aspiring software engineer. I also possess a keen interest in machine learning, AI and data science. Things I love to do when I am not thinking about computers and programming include gaming, photography and video editing.
                 </Typography>
                 <Button variant="contained" className={classes.btn} href="mailto:shankar.varuns26@gmail.com"> &gt; contact me</Button>
                 </div>
-                <img src={Image} className={classes.media}></img>
+                <img src={Image} alt="varun shankar" className={classes.media}></img>
             </Box>
             </Container>
         </div>

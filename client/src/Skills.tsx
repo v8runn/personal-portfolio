@@ -19,7 +19,8 @@ const useStyles = makeStyles(() => ({
         color: "#66fcf1",
         fontWeight: "bold",
         fontSize: "40px",
-        padding: "30px"
+        padding: "30px",
+        fontFamily: "'Montserrat', sans-serif"
     },
     card: {
         height: "100%",
@@ -43,7 +44,8 @@ const useStyles = makeStyles(() => ({
       },
       names: {
           color: "white",
-          fontWeight: "bold"
+          fontWeight: "bold",
+          fontFamily: "'Montserrat', sans-serif"
       },
       content: {
           justifyContent: "center",

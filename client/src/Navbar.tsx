@@ -21,7 +21,8 @@ const useStyles = makeStyles((theme) => ({
         fontSize: "30px",
         letterSpacing:"0em",
         fontWeight: "bold",
-        color: '#66fcf1'
+        color: '#66fcf1',
+        fontFamily: "'Montserrat', sans-serif",
     },
     body: {
         margin: "0"
@@ -66,7 +67,6 @@ export default function Navbar ()
                                         Projects
                                     </Button>
                                     <Button color="inherit" className={classes.btn}>resume
-                                        <a href="./resume.pdf"></a>
                                     </Button>
                                     
                                 </div>

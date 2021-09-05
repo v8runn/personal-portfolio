@@ -9,6 +9,8 @@ const useStyles = makeStyles((theme) => ({
     marginTop: "16px",
     background: "#1f2833",
     color: "#66fcf1",
+    fontFamily: "'Montserrat', sans-serif"
+    
   },
   icons: {
     padding: "3px",

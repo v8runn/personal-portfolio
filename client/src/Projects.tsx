@@ -22,7 +22,8 @@ const useStyles = makeStyles((theme) => ({
         color: "#66fcf1",
         fontWeight: "bold",
         fontSize: "40px",
-        padding: "30px"
+        padding: "30px",
+        fontFamily: "'Montserrat', sans-serif"
     },
     card: {
         height: "100%",
@@ -52,11 +53,13 @@ const useStyles = makeStyles((theme) => ({
       },
       names: {
           color: "#66fcf1",
-          fontWeight: "bold"
+          fontWeight: "bold",
+          fontFamily: "'Montserrat', sans-serif"
       },
       desc: {
           color: "white",
-          justifyContent: "center"
+          justifyContent: "center",
+          fontFamily: "'Montserrat', sans-serif"
       }
 })) 
 
