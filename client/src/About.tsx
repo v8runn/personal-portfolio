@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
           width: "90%",
         borderRadius: "50%",
         border: "2px solid #66fcf1",
-        marginLeft: "90px"
+        marginLeft: "10px"
     },
     info: {
         padding: "30px",
@@ -69,7 +69,7 @@ export default function About ()
                 </Typography>
                 <Box>
                 <Button variant="contained" className={classes.btn} href="mailto:shankar.varuns26@gmail.com"> &gt; contact me</Button>  
-                <Button variant="contained" className={classes.btn} href="https://www.dropbox.com/s/rfinuz7vhdwiylt/resume.pdf?dl=0"> &gt; download my resume</Button>  
+                <Button variant="contained" className={classes.btn} href="https://www.dropbox.com/s/rfinuz7vhdwiylt/resume.pdf?dl=0"> &gt; my resume</Button>  
                 </Box>
                 </Box>
                 </Grid>
