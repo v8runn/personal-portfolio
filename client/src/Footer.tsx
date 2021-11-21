@@ -1,4 +1,4 @@
-import { AppBar, Typography, makeStyles, Grid } from "@material-ui/core";
+import { AppBar, Typography, makeStyles, Grid, Box} from "@material-ui/core";
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import InstagramIcon from '@material-ui/icons/Instagram';
@@ -6,11 +6,14 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 const useStyles = makeStyles((theme) => ({
   footer: {
     padding: theme.spacing(3, 2),
-    marginTop: "16px",
     background: "#1f2833",
     color: "#66fcf1",
-    fontFamily: "'Montserrat', sans-serif"
-    
+    fontFamily: "'Montserrat', sans-serif",
+    fontWeight: "bold",
+    alignItems: "center"
+  },
+  boxes: {
+    margin: "2px"
   },
   icons: {
     padding: "3px",
@@ -30,37 +33,30 @@ export default function Footer() {
 
   return (
     <AppBar position="static" className={classes.footer}>
-      <Grid justifyContent="space-between" container spacing={10}>
-        <Grid item>
-          <Typography variant="body2" style={{ marginLeft: "10px", fontSize: "18px" }}>
-            {"Copyright © "} Varun Shankar 2021
-          </Typography>
-        </Grid>
-
-        <Grid item>
-          <div>
-            <LinkedInIcon
+    <Box className= {classes.boxes}>
+    <LinkedInIcon
             
-              className={classes.icons}
-              onClick={() =>
-                (window.location.href = "https://www.linkedin.com/in/varun-shankar-2002/")
-              }
-            />
-            <GitHubIcon
+            className={classes.icons}
+            onClick={() =>
+              (window.location.href = "https://www.linkedin.com/in/varun-shankar-2002/")
+            }
+          />
+    <GitHubIcon
             
-              className={classes.icons}
-              onClick={() =>
-                (window.location.href = "https://github.com/v8runn")
-              }
-            />
-            <InstagramIcon 
+            className={classes.icons}
+            onClick={() =>
+              (window.location.href = "https://github.com/v8runn")
+            }
+          />
+    <InstagramIcon 
             className={classes.icons}
             onClick={() =>
             (window.location.href = "https://instagram.com/v8runn2")}
             />
-          </div>
-        </Grid>
-      </Grid>
+      </Box>
+      <Box className={classes.boxes}>
+        <Typography>Copyright © Varun Shankar 2021 </Typography>
+      </Box>
     </AppBar>
   );
 }

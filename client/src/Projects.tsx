@@ -8,7 +8,8 @@ import {
     Grid,
     Button,
     Typography,
-    Container
+    Container,
+    Box
 } from "@material-ui/core";
 
 import { makeStyles } from "@material-ui/core/styles";
@@ -40,6 +41,9 @@ const useStyles = makeStyles((theme) => ({
       CardContent: {
           flexGrow: 1,
       },
+      cardGrid: {
+        paddingTop: "5px"
+      },
     btn: {
         textTransform: "lowercase",
         fontFamily: "'Montserrat', sans-serif",
@@ -50,6 +54,7 @@ const useStyles = makeStyles((theme) => ({
         background: "#1f2833",
         color: "#66fcf1",
         border: "2px solid #66fcf1",
+        marginLeft: "10px"
       },
       names: {
           color: "#66fcf1",
@@ -68,14 +73,14 @@ export default function Projects ()
    const classes = useStyles();
    
    return (
-       <div className={classes.root} id="projects">
+       <Box className={classes.root} id="projects">
            <Typography variant="h4" align="center" className={classes.title}>
                projects
            </Typography>
-           <Container maxWidth="md">
+           <Container maxWidth="md" className={classes.cardGrid}>
                <Grid container spacing={4}>
                    {ProjectsData.map((data, index) => (
-                       <Grid item key={index} xs={12} sm={12} md={6}>
+                       <Grid item key={index} xs={12} sm={12} md={4}>
                            <Card className={classes.card}>
                                <CardMedia className={classes.cardMedia}
                                image={data.image} />
@@ -96,6 +101,6 @@ export default function Projects ()
                </Grid>
            </Container>
 
-       </div>
+       </Box>
    )
 }

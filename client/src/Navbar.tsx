@@ -2,30 +2,22 @@ import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Button from "@material-ui/core/Button";
-import Grid from "@material-ui/core/Grid";
-import { Typography } from "@material-ui/core";
+import { Typography, Hidden } from "@material-ui/core";
 
 
 
 const useStyles = makeStyles((theme) => ({
-    root: {
-        flexGrow: 1,
-    },
     nav: {
         background: "#1f2833",
-        padding: "10px"
+        padding: theme.spacing(1, 2),
     },
     title: {
-        flexGrow: 1,
-        marginLeft: "10px",
+        flex: 1,
         fontSize: "30px",
         letterSpacing:"0em",
         fontWeight: "bold",
         color: '#66fcf1',
         fontFamily: "'Montserrat', sans-serif",
-    },
-    body: {
-        margin: "0"
     },
     btn: {
         textTransform: "lowercase",
@@ -36,7 +28,6 @@ const useStyles = makeStyles((theme) => ({
             fontSize: "17px"
         }
     },
-    toolbar: theme.mixins.toolbar,
 
 }))
 
@@ -45,36 +36,25 @@ export default function Navbar ()
     const classes = useStyles();
 
     return(
-            <div className={classes.root}>
-            <div className={classes.toolbar}>
-            <AppBar className={classes.nav}>
+            <AppBar className={classes.nav} position="static">
                 <Toolbar>
-                    <Grid justifyContent="space-between" container spacing={10}>
-                        <Grid item>
-                        <Typography variant="h6" className={classes.title}>
+                        <Typography className={classes.title}>
                             varun shankar
                         </Typography>
-                            </Grid>
-                            <Grid item>
-                                <div>
-                                    <Button color="inherit" className={classes.btn} href="#about">
-                                        About Me
-                                    </Button>
-                                    <Button color="inherit" className={classes.btn} href="#skills">
-                                        Skills
-                                    </Button>
-                                    <Button color="inherit" className={classes.btn} href="#projects">
-                                        Projects
-                                    </Button>
-                                    <Button color="inherit" className={classes.btn} href="https://www.dropbox.com/s/puit0e5b7hd0wjl/Varun%20Resume%20September%202021%20%281%29.pdf?dl=0">resume
-                                    </Button>
-                                    
-                                </div>
-                            </Grid>
-                    </Grid>
+                        <Hidden mdDown>
+                        <Button color="inherit" className={classes.btn} href="#about">
+                        About Me
+                        </Button>
+                        <Button color="inherit" className={classes.btn} href="#skills">
+                        Skills
+                        </Button>
+                        <Button color="inherit" className={classes.btn} href="#projects">
+                        Projects
+                        </Button>
+                        <Button color="inherit" className={classes.btn} href="https://www.dropbox.com/s/puit0e5b7hd0wjl/Varun%20Resume%20September%202021%20%281%29.pdf?dl=0">resume
+                        </Button>
+                        </Hidden>
                 </Toolbar>
             </AppBar>
-            </div>
-            </div>
     )
 }

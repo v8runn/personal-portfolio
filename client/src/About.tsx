@@ -1,34 +1,35 @@
 import Image from "./varun.jpg";
-import { Container, Button, Box, Typography } from "@material-ui/core";
+import { Container, Button, Box, Typography, Grid } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles((theme) => ({
     root: {
         background: "#1f2833",
-        padding: "50px"
     },
     title: {
         color: "#66fcf1",
         fontWeight: "bold",
         fontSize: "40px",
         fontFamily: "'Montserrat', sans-serif",
+        marginBottom: "20px"
     },
     media: {
-        width: "30%",
-        padding: "5px",
+        [theme.breakpoints.up(600)]: {
+            width: "70%",
+          },
+          width: "90%",
         borderRadius: "50%",
         border: "2px solid #66fcf1",
-        marginBottom: "50px"
+        marginLeft: "90px"
     },
     info: {
-        marginRight: "10px",
-        padding: "15px",
+        padding: "30px",
         fontFamily: "'Montserrat', sans-serif",
     },
     box: {
         padding: "10px",
         color: "white",
-        marginTop: "25px"
+        paddingTop: "5em"
     },
     btn: {
         textTransform: "lowercase",
@@ -38,7 +39,8 @@ const useStyles = makeStyles(() => ({
             background: "white",
             color: "black"
         },
-        marginTop: "45px",
+        marginTop: "30px",
+        marginLeft:"30px",
         background: "#1f2833",
         color: "#66fcf1",
         border: "2px solid #66fcf1"
@@ -52,17 +54,25 @@ export default function About ()
     return (
         <div className={classes.root} id="about">
             <Container>
-            <Typography variant="h4" align="center" className={classes.title}>
-                hello, world!
-            </Typography>
             <Box display="flex" flexDirection="row" alignItems="center" className={classes.box}>
-                <div>
-                <Typography variant="h6" className={classes.info}>
+            <Grid container>
+                <Grid item xs={12} md={6} >
+                <img src={Image} alt="varun shankar" className={classes.media}></img>
+                </Grid>
+                <Grid item xs={12} md={6}>
+                    <Box className={classes.info} pt={5}>
+                    <Typography variant="h4" className={classes.title} align="center">
+                        hello, world!
+                    </Typography>
+                    <Typography variant="h6" className={classes.info}>
                     I am Varun, a second-year CS undergraduate at the University of Manchester and an aspiring software engineer. I also possess a keen interest in machine learning, AI and data science. Things I love to do when I am not thinking about computers and programming include gaming, photography and video editing.
                 </Typography>
-                <Button variant="contained" className={classes.btn} href="mailto:shankar.varuns26@gmail.com"> &gt; contact me</Button>
-                </div>
-                <img src={Image} alt="varun shankar" className={classes.media}></img>
+                <Box>
+                <Button variant="contained" className={classes.btn} href="mailto:shankar.varuns26@gmail.com"> &gt; contact me</Button>  
+                </Box>
+                </Box>
+                </Grid>
+            </Grid>
             </Box>
             </Container>
         </div>

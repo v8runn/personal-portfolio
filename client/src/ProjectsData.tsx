@@ -2,8 +2,7 @@ import inarow from "./inarow.png"
 import snakegame from "./snakegame.png"
 import supermarket from "./supermarket.png"
 import chess from "./chess.png"
-
-
+import stendhal from "./stendhal.png"
 
 
 interface projects {
@@ -37,6 +36,12 @@ const ProjectsData: projects[] = [
         image: chess,
         description: "The game of chess created on Java.",
         link: "https://github.com/v8runn/java-chess-game"
+    },
+    {
+        name:"stendhal",
+        image: stendhal,
+        description: "Fixed bugs and implemented additional features on this open-source game written in Java as a part of my SWE team project in Year 2.",
+        link: "https://gitlab.cs.man.ac.uk/comp23311_2021/stendhal_S1Team42"
     }
 
 ]
