@@ -1,7 +1,6 @@
 import './styles.css'; 
 import Navbar from './Navbar'
 import About from './About'
-import Skills from './Skills'
 import Projects from './Projects'
 import Footer from './Footer'
 import { CssBaseline, Box } from '@material-ui/core';

@@ -45,13 +45,10 @@ export default function Navbar ()
                         <Button color="inherit" className={classes.btn} href="#about">
                         About Me
                         </Button>
-                        <Button color="inherit" className={classes.btn} href="#skills">
-                        Skills
-                        </Button>
                         <Button color="inherit" className={classes.btn} href="#projects">
                         Projects
                         </Button>
-                        <Button color="inherit" className={classes.btn} href="https://www.dropbox.com/s/puit0e5b7hd0wjl/Varun%20Resume%20September%202021%20%281%29.pdf?dl=0">resume
+                        <Button color="inherit" className={classes.btn} href="https://www.dropbox.com/s/rfinuz7vhdwiylt/resume.pdf?dl=0">resume
                         </Button>
                         </Hidden>
                 </Toolbar>

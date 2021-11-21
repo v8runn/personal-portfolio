@@ -56,7 +56,7 @@ export default function About ()
             <Container>
             <Box display="flex" flexDirection="row" alignItems="center" className={classes.box}>
             <Grid container>
-                <Grid item xs={12} md={6} >
+                <Grid item xs={12} sm={12} md={6} >
                 <img src={Image} alt="varun shankar" className={classes.media}></img>
                 </Grid>
                 <Grid item xs={12} md={6}>
@@ -69,6 +69,7 @@ export default function About ()
                 </Typography>
                 <Box>
                 <Button variant="contained" className={classes.btn} href="mailto:shankar.varuns26@gmail.com"> &gt; contact me</Button>  
+                <Button variant="contained" className={classes.btn} href="https://www.dropbox.com/s/rfinuz7vhdwiylt/resume.pdf?dl=0"> &gt; download my resume</Button>  
                 </Box>
                 </Box>
                 </Grid>

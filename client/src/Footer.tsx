@@ -1,4 +1,4 @@
-import { AppBar, Typography, makeStyles, Grid, Box} from "@material-ui/core";
+import { AppBar, Typography, makeStyles, Box} from "@material-ui/core";
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import InstagramIcon from '@material-ui/icons/Instagram';
