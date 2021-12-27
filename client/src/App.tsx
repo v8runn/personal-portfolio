@@ -1,31 +1,17 @@
-import './styles.css'; 
-import Navbar from './Navbar'
-import About from './About'
-import Projects from './Projects'
-import Footer from './Footer'
-import { CssBaseline, Box } from '@material-ui/core';
-import { makeStyles } from '@material-ui/styles';
+import { useEffect, useState } from "react";
+import Landing from "./Landing";
+import PreLoader from "./PreLoader";
 
-const useStyles = makeStyles(() => ({
-  root: {
-    display: "flex",
-    flexDirection: "column",
-    minHeight: "100vh",
-  },
-}));
+export default function App () {
+    const [loading, setLoading] = useState(true);
+    
+    useEffect(() => {
+        setTimeout(() => setLoading(false), 1000)
+    }, [])
 
-function App() {
-  const classes= useStyles();
-  return (
-    <Box className={classes.root}>
-      <CssBaseline>
-      <Navbar />
-      <About />
-      <Projects />
-      <Footer />
-      </CssBaseline>
-    </Box>
-  );
+    return (
+        <>
+        {loading === false ? (<Landing />) : (<PreLoader />)}
+        </>
+    )
 }
-
-export default App;
